@@ -17,7 +17,17 @@ class BigInt
         static void add(BigInt& x, BigInt& y, BigInt& r);
         static void subtract(BigInt& x, BigInt& y, BigInt& r2);
 
+        /** Override `<<` to print all digits to os. */
+        friend std::ostream &operator<<(std::ostream &os, const BigInt &bi);
+        /** Override < to compare a and b, return true  if a<b; otherwise return false */
+        friend  bool operator<(const BigInt &a, const BigInt &b);
 
+        /** return a+b */
+        friend  BigInt operator+(const BigInt &a, const BigInt &b);
+
+        /** return the absolute difference between a and b,
+           if a>b, return a-b; otherwise, return b-a */
+        friend  BigInt operator-(const BigInt &a, const BigInt &b);
 
     private:
         SLList<int> list;
