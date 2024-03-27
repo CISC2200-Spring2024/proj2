@@ -24,8 +24,7 @@ If you haven't done so already, please set up programming environment our our ow
 
 ## Requirements
 
-Design a class named **BigInt** in a file named **BigInt.h**, implement the class methods in a file named **BigInt.cpp**,
-and test the class in a file named **main.cpp**. 
+In the file **BigInt.h**, four operator overloading functions have been declared. You need to implement them in **BigInt.cpp** file. 
 
 Detailed requirements: 
 
