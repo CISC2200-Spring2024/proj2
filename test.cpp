@@ -22,6 +22,7 @@ int main()
   if (op=="add")
   {
   	ds::BigInt r;
+        //Todo: Modify this to use + operator 
   	ds::BigInt::add (a, b, r);
 
   	r.output ();  
@@ -30,6 +31,7 @@ int main()
   {
 	//assume a>=b
   	ds::BigInt r2;
+	//Todo: Modify this to use - operator 
   	ds::BigInt::subtract (a,b,r2);
   
   	r2.output (); 
