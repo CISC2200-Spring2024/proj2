@@ -52,61 +52,6 @@ Detailed requirements:
     ```
    
 
-
-
-## Requirement
-
-Instead of specifying what constructors and member functions you need to implement, the **main.cpp** provided in this repository 
-demonstrated how the **BigInt** class is used. **Please try your best to figure out what member functions are required, and what their
-function signature should be from the user code. One example is commented below for a constructor:** 
-
-```
-  ds::BigInt a("1234567890123");
-     //This implies that we should provide a constructor that takes a string as parameter
-      //This constructor should initialize a to represent a big integer of value: 1234567890123
-  ds::BigInt b("1567890123");
-
-  a.output(); //this should display a's value: 1234567890123
-
-  ds:BigInt r;
-  ds::BigInt::add (a, b, r);
-
-  r.output ();  //This should display 1236135780246
-
-  ds:BigInt r2;
-  ds::BigInt::subtract (a,b,r2);
-
-  r2.output (); //This should display 123000000000
-```
-
-The **test.cpp** provides another more flexbile way to test your **BigInt** class: 
-```
-string input1,input2, op;
-
-  cin >> op;
-  cin >> input1;
-  cin >> input2;
-
-  ds::BigInt a(input1);
-  ds::BigInt b(input2);
-
-  if (op=="add")
-  {
-        ds::BigInt r;
-        ds::BigInt::add (a, b, r);
-
-        r.output ();
-  }
-  else if (op=="subtract")
-  {
-        //assume a>=b
-        ds::BigInt r2;
-        ds::BigInt::subtract (a,b,r2);
-
-        r2.output ();
-   }
-```
-
 ## Style ##
 
 The coding style part is worth 20 points. The rubrics for the style requirement is as follows: 
