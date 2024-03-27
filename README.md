@@ -21,47 +21,6 @@ If you haven't done so already, please set up programming environment our our ow
 
 **Please follow these tutorials closely and carefully.**
 
-## Requirements
-
-
-Detailed requirements: 
-
-1. The **BigInt** class represents a potential very large integer values, by storing its decimal digits in a list (using **SLList**). 
-2. Implement a **output** member function for **BigInt**, for displaying the big integer in the terminal
-3. Implement a **static** member function named **add** for adding two **BigInt**.
-4. Implement a static member function named **subtract** for substracting one **BigInt** from another **BigInt**. **You can assume that if the result is always positive or zero (i.e.,
-   it won't be called to subtract a larger number from a smaller number.**
-
-## Hints:
- 1. Note that **BigInt** uses **SLList**'s public methods to manipulate the digits of the big integer. 
- 2. It's much easier to implement **add** and **subtract** if you store the ones digit in 0th position of the **SLList**, and the 10th digit in 1th position...
-    So that if you call **get(i)** on the **SLList** object, you retrieve the i-th digit (from the right) for the number. 
- 4. When implementing **output**, you can first output the last digit in the **SLList** (which is the most significant digits), and then the second last digit, ... and output the first digit in the list last.
- 5. Pseudocode for **add** as explained in class (March 5th) with more details:
-    ```
-  # CISC 2200 Programming Project #1
-
-In this project assignment, we practice **using ADT list**, **designing and implementing a class**, 
-and **solving a real-world problem**.
-
-## Provided code
-
-The **ADTList** that we developed in class and lab2 are provided. You need to design and write the 
-rest of the code. 
-
-From your terminal (mac or WSL/Ubunto) window, you can use the following command to download it:
-```
-git clone https://github.com/CISC2200-Spring2024/proj1.git
-```
-
-## Programming Environment Setup
-If you haven't done so already, please set up programming environment our our own computer, by following [Setup Tutorial](https://eecs280staff.github.io/tutorials/). 
-
-- The _Commannd Line Tools_ are required. 
-
-- The _C++ Dev Environment_ (VSCode) is highly recommened.
-
-**Please follow these tutorials closely and carefully.**
 
 ## Requirements
 
