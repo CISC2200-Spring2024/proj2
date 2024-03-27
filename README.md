@@ -28,10 +28,10 @@ In the file **BigInt.h**, four operator overloading functions have been declared
 
 Detailed requirements: 
 
-1. In **BigInt.cpp** file, implement the operator+ overloading. You can call the **add** function directly, or you can replace **add** with the operator+ overloading.
-2. In **BigInt.cpp** file, implement the operator< overloading.  
-3. In **BigInt.cpp** file, implement the operator- overloading. Pay attention that it should return the absolute difference between the two arguments.
-4. Overload the << operator, so that we can output BigInt object using << operator.  
+1. In **BigInt.cpp** file, implement the operator+ overloading (as declared in **BigInt.h**). You can call the **add** function directly, or you can replace **add** with the operator+ overloading.
+2. In **BigInt.cpp** file, implement the operator< overloading (as declared in **BigInt.h**).  
+3. In **BigInt.cpp** file, implement the operator- overloading (as declared in **BigInt.h**). Pay attention that it should return the absolute difference between the two arguments.
+4. In **BigInt.cpp** file, Overload the << operator (as declared in **BigInt.h**), so that we can output BigInt object using << operator.  
 5. Modify **test.cpp** file to test the these operators. 
    
 ## Hints:
@@ -61,3 +61,8 @@ The coding style part is worth 20 points. The rubrics for the style requirement 
 * Overly complicated code: -1 point (-2 max)
 
 ## Submission 
+
+Submit **BigInt.h** and **BigInt.cpp** by April 2nd, Midnight to the following submission site:
+
+[Optional proj2 submission link
+](https://storm.cis.fordham.edu:8443/web/project/1767)
